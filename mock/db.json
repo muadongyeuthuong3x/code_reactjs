@@ -1,0 +1,8 @@
+{
+  "users": [
+    { "id": 1, "name": "John Doe", "active": true },
+    { "id": 2, "name": "Jane Doe", "active": true },
+    { "id": 3, "name": "Alice", "active": true },
+    { "id": 4, "name": "Bob", "active": false }
+  ]
+}
