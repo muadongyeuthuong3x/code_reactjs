@@ -18,6 +18,9 @@ function InputComponent(props) {
       label=""
       name={name}
       rules= {rules}
+      defaultValue = {{
+        
+      }}
     >
       <AutoComplete
         style={{

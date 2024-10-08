@@ -1,3 +1,6 @@
+export const valueAll = "All"
+export const valueCompleted = "Completed"
+export const valueIncomplete= "Incomplete"
 export const options = [
   {
     value: "All",

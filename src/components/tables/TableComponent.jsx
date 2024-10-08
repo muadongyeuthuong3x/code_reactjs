@@ -1,34 +1,31 @@
-import React from "react"; // Import useState
+import React from "react"; 
 import { Table } from "antd";
-
 
 function TableComponent(props) {
   const {
     columns,
-    totalRow = 0,
     pageSize,
     dataSource,
     currentPage,
+    total,
     handleTableChange,
     pagination = {
-      pageSizeOptions: ["10", "20", "100"],
-      defaultPageSize: 10,
+      pageSizeOptions: ["2", "10", "20", "100"],
+      defaultPageSize: 2,
       showSizeChanger: true,
     },
     ...rest
   } = props;
 
-
   return (
     <Table
-      bordered
       columns={columns}
-      dataSource={dataSource}
+      dataSource={dataSource} 
       pagination={{
         ...pagination,
         current: currentPage,
         pageSize,
-        total: totalRow,
+        total: total,
       }}
       onChange={handleTableChange}
       {...rest}
